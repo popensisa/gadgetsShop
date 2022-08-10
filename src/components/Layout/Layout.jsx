@@ -9,7 +9,14 @@ import Instagram from '../../assets/images/Instagram.svg'
 import Twitter from '../../assets/images/Twitter.svg'
 import YouTube from '../../assets/images/YouTube.svg'
 import logo from '../../assets/images/logo.svg'
-
+import logoFooter from '../../assets/images/logoFooter.svg'
+import search from '../../assets/images/search.svg'
+import nav from '../../assets/images/nav.svg'
+import communic from '../../assets/images/communic.svg'
+import status from '../../assets/images/status.svg'
+import basket from '../../assets/images/general.svg'
+import { NavLink } from 'react-router-dom'
+import { AUTH_PAGE, BASKET_PAGE, FAVORITE_PAGE, MAIN_PAGE } from "../router/consts";
 
 const Layout = () => {
     return (
@@ -19,7 +26,10 @@ const Layout = () => {
                     <div className="top">
                         <nav className="nav">
                             <li>Ру</li>
-                            <li>Бишкек</li>
+                            <li>
+                                <img src={nav} alt='иконка местоположение' />
+                                <span> Бишкек </span>
+                            </li>
                             <li>Магазины</li>
                             <li>Доставка</li>
                         </nav>
@@ -34,24 +44,35 @@ const Layout = () => {
             <div className="content">
                 <div className="container">
                     <div className="low">
-                        <img src={logo} alt='logo'/>
+                        <NavLink to={MAIN_PAGE}>
+                            <img className="logo" src={logo} alt='logo' />
+                        </NavLink>
                         <div className="low-catalog">
-                            <div className="burger"></div>
+                            <div className="burger">
+                                <div className="burger-item"></div>
+                                <div className="burger-item"></div>
+                                <div className="burger-item"></div>
+                            </div>
                             <h1>Каталог</h1>
                         </div>
-                        <form>
+                        <form className="form-search">
                             <input placeholder="Искать..." />
-                            <div>search</div>
+                            <div className="btn">
+                                <img src={search} alt='search' />
+                            </div>
                         </form>
-                        <div>
+                        <NavLink to={AUTH_PAGE} className="low-text">
+                            <img src={communic} alt='icon auth' />
                             <h1>Войти</h1>
-                        </div>
-                        <div>
+                        </NavLink>
+                        <NavLink to={FAVORITE_PAGE} className="low-text">
+                            <img src={status} alt='icon auth' />
                             <h1>Избранное</h1>
-                        </div>
-                        <div>
+                        </NavLink>
+                        <NavLink to={BASKET_PAGE} className="low-text">
+                            <img src={basket} alt='icon auth' />
                             <h1>Корзина</h1>
-                        </div>
+                        </NavLink>
                     </div>
                     <Outlet />
                 </div>
@@ -59,7 +80,7 @@ const Layout = () => {
 
             <footer>
                 <div className="footer container">
-                    <h1 className="footer-title">BTech</h1>
+                    <img className="logo-footer" src={logoFooter} alt='logo' />
                     <div className="line"></div>
                     <div className="footer-nav">
                         <div className='footer-nav-text'>
