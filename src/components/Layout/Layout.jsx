@@ -17,18 +17,60 @@ import status from '../../assets/images/status.svg'
 import basket from '../../assets/images/general.svg'
 import { NavLink } from 'react-router-dom'
 import { AUTH_PAGE, BASKET_PAGE, FAVORITE_PAGE, MAIN_PAGE } from "../router/consts";
+import ModalCatalog from "../modals/ModalCatalog";
+import { useState } from "react";
+import ModalLanguage from "../modals/ModalLanguage";
+import ModalCountry from "../modals/ModalCountry";
 
 const Layout = () => {
+
+    const [activeModalCatalog, setActiveModalCatalog] = useState(false)
+    const [activeLang, setActiveLang] = useState(false)
+    const [selectedLang, setSelectedLang] = useState(0)
+    const languages = ['Ру', 'Кырг']
+
+    const [activeCountry, setActiveCountry] = useState(false)
+    const [selectedCountry, setSelectedCountry] = useState(0)
+    const countries = ['Бишкек', 'Ош']
+
+
+    const changeLang = (i) => {
+        setSelectedLang(i)
+        setActiveLang(false)
+    }
+    const changeCountry = (i) => {
+        setSelectedCountry(i)
+        setActiveCountry(false)
+    }
+
+    const switchOff = () => {
+        setActiveLang(false)
+        setActiveCountry(false)
+    }
+
     return (
         <div className="page">
+            <ModalCatalog activeModalCatalog={activeModalCatalog} setActiveModalCatalog={setActiveModalCatalog} />
             <header>
                 <div className="d-flex container">
                     <div className="top">
+                        <ModalLanguage
+                            selectedLang={selectedLang}
+                            languages={languages}
+                            changeLang={changeLang}
+                            activeLang={activeLang}
+                        />
+                        <ModalCountry
+                            selectedCountry={selectedCountry}
+                            countries={countries}
+                            activeCountry={activeCountry}
+                            changeCountry={changeCountry}
+                        />
                         <nav className="nav">
-                            <li>Ру</li>
+                            <li onClick={() => setActiveLang(!activeLang)}>{languages[selectedLang]}</li>
                             <li>
                                 <img src={nav} alt='иконка местоположение' />
-                                <span> Бишкек </span>
+                                <span onClick={() => setActiveCountry(!activeCountry)}> {countries[selectedCountry]} </span>
                             </li>
                             <li>Магазины</li>
                             <li>Доставка</li>
@@ -40,14 +82,13 @@ const Layout = () => {
                     </div>
                 </div>
             </header>
-
-            <div className="content">
+            <div className="content" onClick={switchOff}>
                 <div className="container">
                     <div className="low">
                         <NavLink to={MAIN_PAGE}>
                             <img className="logo" src={logo} alt='logo' />
                         </NavLink>
-                        <div className="low-catalog">
+                        <div className="low-catalog" onClick={() => setActiveModalCatalog(true)}>
                             <div className="burger">
                                 <div className="burger-item"></div>
                                 <div className="burger-item"></div>
