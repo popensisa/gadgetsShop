@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/gadgetsShop/static/css/main.b383458f.css",
+    "main.js": "/gadgetsShop/static/js/main.6804737c.js",
+    "static/media/map.svg": "/gadgetsShop/static/media/map.2acd7f8166518dfce288666a9269f863.svg",
+    "static/media/Rubik-VariableFont_wght.ttf": "/gadgetsShop/static/media/Rubik-VariableFont_wght.5cbae960ce7cf02e8bd8.ttf",
+    "static/media/mbank.svg": "/gadgetsShop/static/media/mbank.6216c63ac3d833e70dab75de69fef139.svg",
+    "static/media/optima.svg": "/gadgetsShop/static/media/optima.134fe4813d791c13da3de55f404860e4.svg",
+    "static/media/balance.svg": "/gadgetsShop/static/media/balance.86a84dcf942dec86147b9863fe7faad1.svg",
+    "static/media/logo.svg": "/gadgetsShop/static/media/logo.2e7fdd92508c565f63544d11e0ce84df.svg",
+    "static/media/logoFooter.svg": "/gadgetsShop/static/media/logoFooter.a7e00a266686c679fb6ce50de6232e8a.svg",
+    "static/media/Instagram.svg": "/gadgetsShop/static/media/Instagram.9f614c5c0ec36b55f43b669fd8e2c064.svg",
+    "static/media/general.svg": "/gadgetsShop/static/media/general.869ce4591b9033e3d2f848113ac5b41b.svg",
+    "static/media/communic.svg": "/gadgetsShop/static/media/communic.2302938c48155659dca4f7e80caacc9e.svg",
+    "static/media/status.svg": "/gadgetsShop/static/media/status.e4520b2235fb5e200ebdda6e2d02dacf.svg",
+    "static/media/Twitter.svg": "/gadgetsShop/static/media/Twitter.03b12a0d4742ac4ff6499b83520d807d.svg",
+    "static/media/nav.svg": "/gadgetsShop/static/media/nav.ae7065b5cca830f74c1f521217ffbcf7.svg",
+    "static/media/YouTube.svg": "/gadgetsShop/static/media/YouTube.56738dd5a0e310e5e67f71d97c651d3a.svg",
+    "static/media/search.svg": "/gadgetsShop/static/media/search.e7d0f25158555d58c0e84e28e1d24144.svg",
+    "index.html": "/gadgetsShop/index.html",
+    "static/media/Facebook.svg": "/gadgetsShop/static/media/Facebook.8064045397e90cae799bf14f4494ed3a.svg",
+    "main.b383458f.css.map": "/gadgetsShop/static/css/main.b383458f.css.map",
+    "main.6804737c.js.map": "/gadgetsShop/static/js/main.6804737c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b383458f.css",
+    "static/js/main.6804737c.js"
+  ]
+}
