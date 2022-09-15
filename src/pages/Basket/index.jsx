@@ -7,19 +7,6 @@ const Basket = () => {
     const location = useLocation()
     console.log(location)
 
-
-    // const submitForm = (e) => {
-    //     e.preventDefault()
-    //     // setForm({
-    //     //     name: '',
-    //     //     surname: '',
-    //     //     phoneNumber: "",
-    //     //     email: "",
-    //     //     address: "",
-    //     // })
-    //     console.log(setForm(form))
-    // }
-
     return (
         <div>
             <div className={style.navRouter}>

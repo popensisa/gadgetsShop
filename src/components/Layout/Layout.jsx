@@ -22,7 +22,12 @@ import { useState } from "react";
 import ModalLanguage from "../modals/ModalLanguage";
 import ModalCountry from "../modals/ModalCountry";
 
+import { useSelector, useDispatch } from 'react-redux'
+
 const Layout = () => {
+
+    const { totalCount } = useSelector(state => state.cart)
+    const dispatch = useDispatch()
 
     const [activeModalCatalog, setActiveModalCatalog] = useState(false)
     const [activeLang, setActiveLang] = useState(false)
@@ -111,7 +116,10 @@ const Layout = () => {
                             <h1>Избранное</h1>
                         </NavLink>
                         <NavLink to={BASKET_PAGE} className="low-text">
-                            <img src={basket} alt='icon auth' />
+                            <div className="basketIcon">
+                                <img src={basket} alt='icon auth' />
+                                <span>{totalCount}</span>
+                            </div>
                             <h1>Корзина</h1>
                         </NavLink>
                     </div>

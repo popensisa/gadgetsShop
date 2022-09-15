@@ -201,10 +201,10 @@ h3 {
                     position: absolute;
                     bottom: 15px;
                 }
-            }
 
-            .paymentActive+.paymentActive {
-                margin-left: 20px;
+                .paymentActive+.paymentActive {
+                    margin-left: 20px;
+                }
             }
 
         }
@@ -236,6 +236,12 @@ h3 {
     padding: 14px 30px 18px 20px;
     position: relative;
 
+    .shopping {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     >span {
         font-family: 'Rubik', serif;
         font-weight: 500;
@@ -257,6 +263,10 @@ h3 {
             >img {
                 max-width: 83px;
                 max-height: 83px;
+            }
+
+            .basketTitle {
+                max-width: 271px;
             }
 
             .basketItem__title {
@@ -282,6 +292,8 @@ h3 {
             }
 
             .basketPrice {
+                min-width: 100px;
+
                 >span {
                     line-height: 22px;
                     font-weight: bold;
