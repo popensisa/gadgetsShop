@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main_wrapper {
+  margin-left: 112px;
+}
+.container {
+  width: 1216px;
+  display: flex;
+  justify-content: space-between;
+}
+.phone_kot {
+  display: flex;
+  flex-direction: column;
+  margin-left: 150px;
+}
+.pshka {
+  margin-top: 15px;
+}
+.korot {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+.krot {
+  display: flex;
+  justify-content: space-between;
+}
+.review {
+  display: flex;
+}
+
+.fiveOt {
+  margin-left: 10px;
+  font-size: 20px;
+}
+.phone_kot {
+  width: 1000px;
+}
+.but_heart {
+  height: 50px;
+  width: 145px;
+  border-radius: 12px;
+  background-color: yellow;
+  margin: 15px 0 15px;
+  font-weight: 600;
+  font-size: 18px;
+  border: white;
+}
+.ashka {
+  font-size: 24px;
+}
+.nrav {
+  display: flex;
+}
+.puka {
+  margin-left: 5px;
+}
+.kamera {
+  display: flex;
+  margin-top: 15px;
+}
+.gray_p {
+  color: #A4A2AF;
+  margin-right: 7px;
+}
+.black_p {
+  font-weight: 600;
+}
+.button_redmi {
+  margin-left: 60px;
+}
+.slesh {
+  color: #605D74;
+  margin-bottom: 20px;
+}
+.pult {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.system {
+  display: flex;
+}
+.line_d {
+  margin-left: 60px;
+}
