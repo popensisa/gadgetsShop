@@ -2,6 +2,7 @@ export const MAIN_PAGE = ''
 export const AUTH_PAGE = 'auth'
 export const FAVORITE_PAGE = 'favorite'
 export const BASKET_PAGE = 'basket'
+export const PAYMENT_PAGE = 'payment'
 
 // export const CATALOG_PAGE = 'catalog'
 // export const SELECTED_CATALOG_PAGE = 'catalog/:id'
