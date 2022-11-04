@@ -1,0 +1,53 @@
+$base-color: #F9FC62;
+.headerContent {
+    background-color: #62A9FC;
+    width: 100%;
+    height: 70vh;
+
+    .headerSlider {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .container {
+        max-width: 1212px;
+        margin: 0 auto;
+        padding: 15px;
+    }
+   
+}
+
+ 
+.headerSliderInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 15px 0;
+    justify-content: center;
+    height: 50vh;
+    font-family: 'Rubik', sans-serif;
+    line-height: 135%;
+
+    .headerSliderTitle {
+        font-size: 59px;
+        letter-spacing: 0.03em;
+        font-weight: 700;
+      
+    }
+    .headerSliderDesc {
+        font-weight: 600;
+        font-size: 24px;
+        margin: 12px 0 37px 0;
+        letter-spacing: 0.01em;
+    }
+    .headerSliderBtn {
+        max-width: 150px;
+        background-color: $base-color;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 12px;
+        font-weight: 600;
+    }
+}

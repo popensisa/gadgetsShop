@@ -15,11 +15,16 @@ h3 {
     letter-spacing: 0.01em;
     color: $black;
 
+    
 }
 
 .cart {
     display: flex;
     justify-content: space-between;
+}
+.container {
+    max-width: 1212px;
+    margin: 0 auto;
 }
 
 .navRouter {
@@ -130,7 +135,7 @@ h3 {
 
     .payment {
         // margin: 40px 0;
-        margin-bottom: 140px;
+        margin-bottom: 80px;
         display: flex;
         flex-direction: column;
 
@@ -220,10 +225,11 @@ h3 {
         font-weight: 600;
         line-height: 24px;
         letter-spacing: 1.5%;
-        position: absolute;
+        // position: absolute;
         right: 50%;
+        margin-left: 500px;
         // top: 107%;
-        bottom: -13%;
+        // bottom: -13%;
     }
 }
 
@@ -364,5 +370,11 @@ h3 {
             color: $price;
             margin-left: 16px;
         }
+    }
+    .sendBtn {
+        margin: 100px 0;
+        position: relative;
+        transform: translateX(100%);
+        
     }
 }

@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Navigate } from 'react-router-dom'
 import style from '../../pages/Basket/Basket.module.scss'
 
 export default function BasketForm() {
@@ -201,7 +202,10 @@ export default function BasketForm() {
                             ))}
                         </div>
                     </div>
-                    <button className={style.paymentBtn}>Оплатить</button>
+                    <div className={style.sendBtn}>
+                    <button className={style.paymentBtn} onClick={() => <Navigate to="/binding" />}>Оплатить</button>
+                    </div>
+                   
                 </div>
             </form >
 

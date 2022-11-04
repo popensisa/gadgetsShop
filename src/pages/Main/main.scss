@@ -1,1 +1,45 @@
 
+.categoriesBtns {
+    margin: 46px 0 64px 0;
+    display: flex;
+    justify-content: space-between;
+
+    
+}
+
+// .container {
+//     max-width: 1212px;
+//     margin: 0 auto;
+// }
+
+.popularCategories {
+    margin: 64px 0 50px 0;
+
+    >h2 {
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 38px;
+        margin-bottom: 37px;
+    }
+    .popularCatgList {
+        display: flex;
+    }
+}
+
+.hits {
+    margin: 46px 0 140px 0;
+
+    >h2 {
+        margin-bottom: 46px;
+        font-size: 28px;
+        line-height: 38px;
+        font-weight: 600;
+        font-family: 'Rubik', sans-serif;
+    }
+
+    .hitsList {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px 55px;
+    }
+}

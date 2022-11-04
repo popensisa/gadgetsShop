@@ -1,0 +1,26 @@
+.partners {
+    margin: 75px 0 155px 0;
+
+    .container {
+        max-width: 1212px;
+        margin: 0 auto;
+    }
+
+    .partnersTitle {
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 38px;
+        margin-bottom: 81px;
+    }
+
+    .partnersList {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 84px 105px;
+        flex-wrap: wrap;
+
+        .partnerItem {
+        }
+    }
+}

@@ -88,41 +88,44 @@ const Layout = () => {
                 </div>
             </header>
             <div className="content" onClick={switchOff}>
-                <div className="container">
-                    <div className="low">
-                        <NavLink to={MAIN_PAGE}>
-                            <img className="logo" src={logo} alt='logo' />
-                        </NavLink>
-                        <div className="low-catalog" onClick={() => setActiveModalCatalog(true)}>
-                            <div className="burger">
-                                <div className="burger-item"></div>
-                                <div className="burger-item"></div>
-                                <div className="burger-item"></div>
+                <div className="">
+                    <div className="container">
+                        <div className="low">
+                            <NavLink to={MAIN_PAGE}>
+                                <img className="logo" src={logo} alt='logo' />
+                            </NavLink>
+                            <div className="low-catalog" onClick={() => setActiveModalCatalog(true)}>
+                                <div className="burger">
+                                    <div className="burger-item"></div>
+                                    <div className="burger-item"></div>
+                                    <div className="burger-item"></div>
+                                </div>
+                                <h1>Каталог</h1>
                             </div>
-                            <h1>Каталог</h1>
+                            <form className="form-search">
+                                <input placeholder="Искать..." />
+                                <div className="btn">
+                                    <img src={search} alt='search' />
+                                </div>
+                            </form>
+                            <NavLink to={AUTH_PAGE} className="low-text">
+                                <img src={communic} alt='icon auth' />
+                                <h1>Войти</h1>
+                            </NavLink>
+                            <NavLink to={FAVORITE_PAGE} className="low-text">
+                                <img src={status} alt='icon auth' />
+                                <h1>Избранное</h1>
+                            </NavLink>
+                            <NavLink to={BASKET_PAGE} className="low-text">
+                                <div className="basketIcon">
+                                    <img src={basket} alt='icon auth' />
+                                    <span>{totalCount}</span>
+                                </div>
+                                <h1>Корзина</h1>
+                            </NavLink>
                         </div>
-                        <form className="form-search">
-                            <input placeholder="Искать..." />
-                            <div className="btn">
-                                <img src={search} alt='search' />
-                            </div>
-                        </form>
-                        <NavLink to={AUTH_PAGE} className="low-text">
-                            <img src={communic} alt='icon auth' />
-                            <h1>Войти</h1>
-                        </NavLink>
-                        <NavLink to={FAVORITE_PAGE} className="low-text">
-                            <img src={status} alt='icon auth' />
-                            <h1>Избранное</h1>
-                        </NavLink>
-                        <NavLink to={BASKET_PAGE} className="low-text">
-                            <div className="basketIcon">
-                                <img src={basket} alt='icon auth' />
-                                <span>{totalCount}</span>
-                            </div>
-                            <h1>Корзина</h1>
-                        </NavLink>
                     </div>
+                    
                     <Outlet />
                 </div>
             </div>

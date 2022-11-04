@@ -1,0 +1,28 @@
+$specialTextOne: #417716;
+.specialItem {
+    background-color: #F9FC62;
+    min-width: 340px;
+    height: 150px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-between;
+    
+    .specialItemTitle {
+        color: $specialTextOne;
+        margin: 12px 0 0 12px;
+        font-size: 26px;
+        line-height: 30px;
+        font-family: 'Roboto', sans-serif;
+    }
+    .specialItemIllustr {
+        display: flex;
+        align-items: flex-end;
+        margin-right: 7.5px;
+        >span {
+            font-size: 56px;
+            line-height: 67px;
+            color: #20520E;
+
+        }
+    }
+}

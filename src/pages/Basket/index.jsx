@@ -8,7 +8,7 @@ const Basket = () => {
     console.log(location)
 
     return (
-        <div>
+        <div className={style.container}>
             <div className={style.navRouter}>
                 <span>Главная   /   Смартфоны   /   Samsung Galaxy A52 5G EU / Корзина </span>
             </div>

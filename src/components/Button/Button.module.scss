@@ -1,0 +1,30 @@
+$second-gray: #F7F7FC;
+
+.categoryMain {
+    width: 288px;
+    height: 64px;
+    border-radius: 16px;
+    background-color: $second-gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    position: relative;
+}
+.categoryMain::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: #0AF;
+    transition: transform 300ms ease-in-out;
+    
+    transform: scaleX(0);
+}
+
+.categoryMain:hover::before,
+.categoryMain:focus::before {
+    transform: scaleX(1);
+}
